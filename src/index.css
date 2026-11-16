@@ -27,6 +27,19 @@
     border-color: var(--border-subtle);
   }
 
+  :focus-visible {
+    outline: 2px solid var(--accent-primary);
+    outline-offset: 2px;
+  }
+
+  a[href], button {
+    cursor: pointer;
+  }
+
+  button:disabled, a[aria-disabled="true"] {
+    cursor: not-allowed;
+  }
+
   h1, h2 {
     font-family: 'Newsreader', Georgia, serif;
     letter-spacing: -0.02em;
